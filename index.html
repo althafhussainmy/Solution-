@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14283f">
+  <meta name="description" content="Better college timing means better learning and happier students. Explore our student-focused college timing poster.">
+  <title>College Timing | Better Timing, Brighter Future</title>
+  <style>
+    :root { --navy:#14283f; --cream:#fbf5e9; --coral:#f2a3a5; --green:#c7dfbd; --muted:#566273; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--navy); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color:inherit; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px clamp(18px,5vw,72px); border-bottom:1px solid #e8dfd0; }
+    .brand { font-weight:850; letter-spacing:.02em; text-decoration:none; }
+    .brand span { color:#c16b72; }
+    .nav { display:flex; gap:20px; align-items:center; font-size:.95rem; }
+    .nav a { text-decoration:none; opacity:.85; }
+    .nav a:hover { opacity:1; text-decoration:underline; }
+    .hero { max-width:1120px; margin:auto; padding:64px 22px 34px; text-align:center; }
+    .eyebrow { display:inline-block; background:#f4d9a0; border-radius:999px; padding:8px 14px; font-size:.8rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:20px 0 14px; font-size:clamp(2.6rem,7vw,5.6rem); line-height:.98; letter-spacing:-.055em; font-weight:900; }
+    h1 span { color:#c16b72; }
+    .intro { max-width:680px; margin:0 auto; color:var(--muted); font-size:clamp(1rem,2vw,1.2rem); line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:26px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; gap:9px; border:2px solid var(--navy); border-radius:999px; padding:12px 19px; font-weight:750; text-decoration:none; cursor:pointer; transition:transform .18s, box-shadow .18s; font:inherit; font-weight:750; }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 5px 0 #14283f24; }
+    .btn-primary { background:var(--navy); color:white; }
+    .btn-secondary { background:transparent; }
+    .poster-section { max-width:1020px; padding:20px 20px 72px; margin:auto; }
+    .poster-frame { background:#fffdf8; border:1px solid #e9dfd0; border-radius:24px; padding:clamp(10px,2vw,22px); box-shadow:0 22px 70px #25364a17; }
+    .poster-frame img { display:block; width:100%; height:auto; border-radius:12px; }
+    .caption { text-align:center; color:var(--muted); margin:15px 0 0; font-size:.92rem; }
+    .info { max-width:1050px; margin:0 auto; padding:0 22px 76px; }
+    .section-heading { text-align:center; margin-bottom:26px; }
+    .section-heading h2 { font-size:clamp(1.8rem,4vw,2.8rem); margin:0 0 9px; letter-spacing:-.035em; }
+    .section-heading p { margin:0; color:var(--muted); line-height:1.6; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { padding:23px; border-radius:20px; border:1px solid #e9dfd0; background:#fffaf1; }
+    .card .icon { width:44px; height:44px; display:grid; place-items:center; border-radius:14px; background:#f7d8d2; font-size:1.35rem; margin-bottom:14px; }
+    .card:nth-child(2) .icon { background:#d8e8d1; }
+    .card:nth-child(3) .icon { background:#d5e8f3; }
+    .card h3 { margin:0 0 8px; font-size:1.1rem; }
+    .card p { margin:0; color:var(--muted); line-height:1.65; font-size:.96rem; }
+    .cta { max-width:1000px; margin:0 auto 70px; padding:0 22px; }
+    .cta-inner { text-align:center; background:var(--navy); color:#fffaf1; border-radius:24px; padding:clamp(28px,5vw,52px); }
+    .cta h2 { font-size:clamp(1.7rem,4vw,2.7rem); margin:0 0 12px; }
+    .cta p { max-width:650px; margin:0 auto 22px; color:#e0e6ed; line-height:1.7; }
+    .cta .btn { background:#f4d9a0; color:var(--navy); border-color:#f4d9a0; }
+    footer { padding:22px; text-align:center; color:var(--muted); border-top:1px solid #e8dfd0; font-size:.9rem; }
+    @media (max-width:700px) {
+      .topbar { padding:15px 18px; } .nav { gap:12px; font-size:.85rem; }
+      .hero { padding-top:48px; } .cards { grid-template-columns:1fr; }
+      .card { display:flex; gap:14px; align-items:flex-start; } .card .icon { flex-shrink:0; margin:0; }
+    }
+    @media (max-width:420px) { .nav a:first-child { display:none; } .btn { width:100%; } .actions { padding:0 10px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="College Timing home">COLLEGE <span>TIMING</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#poster">View poster</a>
+      <a href="#ideas">Key ideas</a>
+      <a href="#share">Share</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Student-first campus life</div>
+      <h1>Better Timing.<br><span>Brighter Future.</span></h1>
+      <p class="intro">Right time means better learning and happier students. Explore ideas for making college schedules more balanced, practical, and supportive for everyone.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#poster">View the poster ↓</a>
+        <a class="btn btn-secondary" href="college-timing-poster.jpg" download>Download poster ↓</a>
+      </div>
+    </section>
+
+    <section class="poster-section" id="poster" aria-labelledby="poster-title">
+      <div class="poster-frame">
+        <img src="college-timing-poster.jpg" alt="College Timing poster showing common problems with college schedules and possible solutions for students">
+      </div>
+      <p class="caption" id="poster-title">College Timing — Right Time = Better Learning = Happier Students</p>
+    </section>
+
+    <section class="info" id="ideas">
+      <div class="section-heading">
+        <h2>What can better timing change?</h2>
+        <p>Small improvements to the timetable can make the college day work better for students.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🚌</div>
+          <div><h3>Easier commuting</h3><p>Coordinate class start and finish times with public and college transport to reduce delays and long journeys.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">📅</div>
+          <div><h3>A balanced timetable</h3><p>Reduce unnecessary gaps, provide a proper lunch break, and avoid classes running later than scheduled.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">💬</div>
+          <div><h3>Listen to students</h3><p>Collect student feedback and include class representatives when reviewing schedule changes.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="share">
+      <div class="cta-inner">
+        <h2>Let’s make it work for everyone.</h2>
+        <p>Share this poster with classmates, student representatives, or college management to start a constructive conversation about college timings.</p>
+        <button class="btn" id="shareButton" type="button">Share this page ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Better timing. Less stress. More opportunities. <span id="year"></span></footer>
+  <script>
+    document.getElementById("year").textContent = "© " + new Date().getFullYear();
+    document.getElementById("shareButton").addEventListener("click", async () => {
+      const shareData = { title: document.title, text: "Better Timing, Brighter Future — College Timing poster", url: window.location.href };
+      if (navigator.share) {
+        try { await navigator.share(shareData); } catch (err) { /* user cancelled */ }
+      } else if (navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          const button = document.getElementById("shareButton");
+          button.textContent = "Link copied ✓";
+          setTimeout(() => button.textContent = "Share this page ↗", 2200);
+        } catch (err) { window.prompt("Copy this page link:", window.location.href); }
+      } else {
+        window.prompt("Copy this page link:", window.location.href);
+      }
+    });
+  </script>
+</body>
+</html>
